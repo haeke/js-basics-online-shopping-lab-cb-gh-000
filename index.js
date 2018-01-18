@@ -50,6 +50,11 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].hasOwnProperty(item)) {
+      return cart.splice(i, 1);
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
