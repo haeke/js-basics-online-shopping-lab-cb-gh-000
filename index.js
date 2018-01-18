@@ -32,7 +32,7 @@ function viewCart() {
 
     itemsWithPrices.push(`${itemName} at $${itemPrice}`)
   }
-  
+
 
   if (itemsWithPrices.length === 1) {
     return console.log(`In your cart, you have ${itemsWithPrices.join()}.`)
