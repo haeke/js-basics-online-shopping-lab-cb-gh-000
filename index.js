@@ -27,6 +27,9 @@ function viewCart() {
   for (var i = 0; i < cart.length; i++) {
     var itemNames = Object.keys(cart[i]);
     var itemName = itemNames[0];
+    var itemPrice = cart[i][itemName];
+
+    itemWithPrices.push(`${itemName} at $${itemPrice}`);
   }
 }
 
