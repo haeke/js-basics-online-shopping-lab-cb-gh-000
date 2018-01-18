@@ -23,14 +23,16 @@ function viewCart() {
     return console.log('Your shopping cart is empty.');
   }
 
-  var itemsWithPrices = [];
-  for (var i = 0; i < cart.length; i++) {
+  const itemsWithPrices = [];
+
+  for (let i = 0; i < cart.length; i++) {
     var itemNames = Object.keys(cart[i]);
     var itemName = itemNames[0];
-    var itemPrice = cart[i][itemName];
+    var itemPrice = cart[i][itemName]
 
-    itemWithPrices.push(`${itemName} at $${itemPrice}`);
+    itemsWithPrices.push(`${itemName} at $${itemPrice}`)
   }
+
   var itemwithPricesLen = itemWithPrices.length;
   switch (itemwithPricesLen) {
     case 1:
