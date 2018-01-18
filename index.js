@@ -11,6 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
+ cart.keys({}, getCart, { item: })
 }
 
 function viewCart() {
