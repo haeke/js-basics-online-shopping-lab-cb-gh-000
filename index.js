@@ -34,7 +34,7 @@ function viewCart() {
   var itemwithPricesLen = itemWithPrices.length;
   switch (itemwithPricesLen) {
     case 1:
-      console.log(`In your cart, you have ${itemsWithPrices.join()}.`);
+      console.log(`In your cart, you have ${itemsWithPricesLen.join()}.`);
       break;
     case 2:
       console.log(`In your cart, you have ${itemsWithPrices[0]} and ${itemWithPrices.slice(-1)}.`);
